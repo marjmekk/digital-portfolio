@@ -1,0 +1,135 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
+
+html {
+    background-color:#046582;
+    font-family:'Courier Prime', monospace;;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+body{
+    padding-top: 2px;
+    margin:0; /* removes space above body, top of page */
+ } 
+
+::selection {
+    color: #000; 
+    background: whitesmoke
+}
+
+h1 {
+    font-weight: normal;
+    margin: auto;
+    background:whitesmoke;
+    line-height: 2.5em;
+}
+
+/* Adds google font to H1 for main pages */
+h1 page-header{
+    font-family:'Courier Prime', monospace;;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+ }
+ 
+ main.wrapper {
+    background-color: whitesmoke;
+    overflow: auto;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ } 
+
+p {
+    margin: 1em; /* Top Right Bottom Left (TRBL) */
+}
+
+h2,h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    margin-top: 1em;
+    line-height: 1em;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    background-color: #6E7582;
+}
+
+a:hover {
+    color:black;
+    background-color:#6E7582;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: left;
+        margin-right: 2em;
+    }
+    
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 100%;
+    }
+    
+}
